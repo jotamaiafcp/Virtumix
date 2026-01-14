@@ -6,9 +6,7 @@ import java.time.DayOfWeek
 
 @Entity(tableName = "weekly_plan")
 data class PlannerEntry(
-    /**
-     * Store day of week as ISO-8601 number (1 = Monday ... 7 = Sunday) to keep Room simple.
-     */
+
     @PrimaryKey val dayOfWeek: Int,
     val recipeId: String,
     val recipeName: String? = null,
