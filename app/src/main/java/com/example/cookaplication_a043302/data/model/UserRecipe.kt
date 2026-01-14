@@ -3,7 +3,9 @@ package com.example.cookaplication_a043302.data.model
 import kotlinx.serialization.SerialName
 import kotlinx.serialization.Serializable
 
-
+/**
+ * Extensão para converter UserRecipe para Recipe
+ */
 fun UserRecipe.toRecipe(): Recipe {
     return Recipe(
         id = id ?: "",
